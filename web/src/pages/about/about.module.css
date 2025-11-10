@@ -1,0 +1,151 @@
+.container {
+  padding: 120px 20px 100px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  margin-bottom: 1rem;
+  letter-spacing: -0.03em;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-text-color);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.section p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--secondary-text-color);
+  margin-bottom: 1.5rem;
+}
+
+.section em {
+  display: block;
+  padding: 1.5rem;
+  background: var(--secondary-background-color);
+  border-left: 3px solid var(--matcha-green);
+  border-radius: 4px;
+  font-style: italic;
+  color: var(--secondary-text-color);
+  margin: 2rem 0;
+  font-size: 1rem;
+}
+
+.offerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.offerCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.offerCard:hover {
+  border-color: var(--matcha-green);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.offerCard h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary-text-color);
+  margin-bottom: 0.75rem;
+}
+
+.offerCard p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--secondary-text-color);
+  margin: 0;
+}
+
+.ctaSection {
+  background: var(--matcha-light);
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 4rem;
+  border: 1px solid var(--matcha-green);
+}
+
+.ctaSection h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--matcha-dark);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.ctaSection p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--matcha-dark);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 80px 20px 60px;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+  }
+
+  .section h2 {
+    font-size: 1.75rem;
+  }
+
+  .section p {
+    font-size: 1rem;
+  }
+
+  .offerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaSection {
+    padding: 2rem 1.5rem;
+  }
+
+  .ctaSection h2 {
+    font-size: 1.75rem;
+  }
+
+  .ctaSection p {
+    font-size: 1.125rem;
+  }
+}
